@@ -1,5 +1,5 @@
-import { Background, Button, Footer, Navbar } from "./components";
-import { Arrow, GridFour, LineUp, MapIcon, Scan, ViewBoard } from "./icons";
+import { Background, Footer, Navbar } from "./components";
+import { Arrow } from "./icons";
 
 function App() {
   return (
