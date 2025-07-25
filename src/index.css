@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.title-gradient {
+  background: linear-gradient(267.45deg, #ff3030 -1.55%, #3038ff 106.41%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 80px;
+  background: linear-gradient(90deg, #4438ec -2.59%, #f6313a 100%);
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 1.5px;
+  right: 1.5px;
+  top: 1.5px;
+  bottom: 1.5px;
+  border-radius: 80px;
+  background-color: black;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.btn::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(90deg, #4438ec -2.59%, #f6313a 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+.btn:hover::before {
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.btn:hover::after {
+  color: white;
+}
