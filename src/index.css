@@ -77,3 +77,36 @@ body {
 .btn:hover::after {
   color: white;
 }
+
+.badge {
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 80px;
+  background: linear-gradient(90deg, #4438ec -2.59%, #f6313a 100%);
+  color: white;
+  padding: 24px;
+}
+
+.badge::before {
+  content: "";
+  position: absolute;
+  left: 1.5px;
+  right: 1.5px;
+  top: 1.5px;
+  bottom: 1.5px;
+  border-radius: 80px;
+  background-color: black;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.badge::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(90deg, #4438ec -2.59%, #f6313a 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
