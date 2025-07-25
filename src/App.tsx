@@ -13,7 +13,7 @@ function App() {
               Online
             </h3>
             <h1 className="title-gradient text-xl md:text-4xl font-bold">
-              Langit From Putra to Everyone
+              Langit From Uncle to Everyone
             </h1>
 
             <p className="text-base md:text-xl  text-[#AFAFAF]">
